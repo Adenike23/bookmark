@@ -123,6 +123,7 @@ main{
     background-color: var(--Soft_Blue);
     border-radius: 3px;
     padding: 8px 20px;
+    border-radius: 4px;
 }
 #section_text{
     width: 30%;
@@ -174,6 +175,7 @@ article{
     border: 3px solid var(--Soft_Blue);
     padding: 6px 12px;
     cursor: pointer;
+    border-radius: 4px;
     
 }
 .browsers_text1 button, .browsers_text3 button{
@@ -184,4 +186,76 @@ article{
 }
 .browsers3{
     margin-top: 4rem;
+}
+.FAQ{
+    position: relative;
+    transform: translateX(-50%);
+    left: 50%;
+    text-align: center;
+    width: 40%;
+    color: var(--Very_Dark_Blue);
+}
+.FAQ p{
+    font-size: 20px;
+    font-weight: 600;
+}
+.FAQ h5{
+    font-weight: 400;
+    margin: 2rem 0;
+}
+.emailUs{
+    display: flex;
+    align-items: center;
+}
+.lower_section{
+    background-color: var(--Soft_Blue);
+    padding: 2rem 1rem;
+    text-align: center;
+    color: white;
+}
+.lower_section h3{
+    margin: 2rem 0;
+}
+#email{
+    position: relative;
+    transform: translateX(-50%);
+    left: 45%;
+    padding: 8px;
+}
+.emailUs button{
+    position: relative;
+    transform: translateX(-50%);
+    left: 43%;
+    padding: 8px;
+    border: 2px solid var(--Soft_Red);
+    color: var(--Soft_Red);
+    font-size: 12px;
+    cursor: pointer;
+}
+footer{
+    background-color: var(--Very_Dark_Blue);
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 8rem;
+}
+.footer_left{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.footer_left img{
+    filter: invert(0.2);
+}
+.footer_left a{
+    font-size: 11px;
+    color: white;
+}
+.footer_left a:hover{
+    color: var(--Soft_Red);
+}
+.socials a:hover{
+    background-color: var(--Soft_Red);
+}
+.socials a{
+    margin: 13px;
 }
