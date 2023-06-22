@@ -6,17 +6,22 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <title>Document</title>
 </head>
 <body>
     <nav>
         <img src="/images/logo-bookmark.svg" alt="">
+        <div id="nav-menu-icons">
+            <i class="ri-menu-line"></i>
+            <i class="ri-close-fill"></i>
+        </div>
         <div class="navList">
             <ul>
-                <li><a href="/">Features</a></li>
+                <li><a href="#section_head">Features</a></li>
                 <li><a href="/">Pricing</a></li>
-                <li><a href="/">Contact</a></li>
+                <li><a href=".lower_section">Contact</a></li> <!--CHECK THIS!!!-->
             </ul>
             <button>LOGIN</button>
         </div>
@@ -84,12 +89,50 @@
             </div>
         </div>
     </article>
-    <div class="FAQ">
+    <div id="FAQ_section">
+        <div class="FAQ">
         <p>Frequently Asked Questions</p>
         <h5>Here are some of our FAQs. If you have any other questions you’d like answered please feel free to email us.</h5>
     </div>
+    <div class="line2"></div>
+    <div class="questions">
+        <p>What is Bookmark?</p>
+       <div class="menu-icons">
+            <i class="ri-arrow-drop-down-line"></i>
+            <i class="ri-close-line"></i>
+       </div>
+    </div>
+       <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
+
+    <div class="line2"></div>
+    <div class="questions">
+        <p>How can I request a new browser?</p>
+        <div class="menu-icons">
+            <i class="ri-arrow-drop-down-line"></i>
+            <i class="ri-close-line"></i>
+        </div>
+    </div>
+    <div class="line2"></div>
+    <div class="questions">
+        <p>Is there a mobile app?</p>
+        <div class="menu-icons">
+            <i class="ri-arrow-drop-down-line"></i>
+            <i class="ri-close-line"></i>
+        </div>
+    </div>
+    <div class="line2"></div>
+    <div class="questions">
+        <p>What about other Chromiun browsers?</p>
+        <div class="menu-icons">
+            <i class="ri-arrow-drop-down-line"></i>
+            <i class="ri-close-line"></i>
+        </div>
+    </div>
+    <div class="line2"></div>
+    </div>
+    <button id="FAQ_button">More Info</button>
     <div class="lower_section">
-        <p>35,000 +  ALREADY JOINED</p>
+        <p>35,000 +   ALREADY JOINED</p>
         <h3>Stay up-to-date with what we’re doing</h3>
         <div class="emailUs">
             <input type="email" name="email" id="email" placeholder="Enter your Email address">
@@ -110,5 +153,6 @@
             <a href="/"><img src="/images/icon-twitter.svg" alt=""></a>
         </div>
     </footer>
+    <script src="/js/main.js"></script>
 </body>
 </html>

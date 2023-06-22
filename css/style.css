@@ -11,6 +11,10 @@
     --Very_Dark_Blue: hsl(229, 31%, 21%)
 
 }
+html, body{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
 a{
     cursor: pointer;
     text-decoration: none;
@@ -26,7 +30,10 @@ nav{
     justify-content: end;
     gap: 4rem;
 }
-ul{
+#nav-menu-icons{
+    display: none;
+}
+ nav ul{
     gap: 4rem;
     display: flex;
     list-style-type: none;
@@ -49,14 +56,14 @@ main{
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
-    margin: 2rem 5rem;
-    gap: 15rem;
+    margin: 3rem 6rem;
+    gap: 7rem;
 }
 .main_text{
-    width: 45%;
+    width: 55%;
 }
 .main_text p{
-    font-size: 39px;
+    font-size: 37px;
     font-weight: 500;
 }
 .main_text h5{
@@ -64,6 +71,9 @@ main{
     font-size: 16px;
     font-weight: 300;
     color: var(--Grayish_Blue);
+}
+main img{
+    width: 48%;
 }
 .main_text button{
     all: unset;
@@ -76,6 +86,7 @@ main{
     background-color: var(--Soft_Blue);
     border: 2px solid var(--Soft_Blue);
     border-radius: 3px;
+    color: white;
 }
 #firefox_button{
     margin-left: 1rem;
@@ -105,8 +116,11 @@ main{
 #section_body{
     display: flex;
     align-items: center;
-    margin: 4rem 5rem;
-    gap: 15rem;
+    margin: 4rem 6rem;
+    gap: 9rem;
+}
+#section_body img{
+    width: 50%;
 }
 #section_body p{
     font-size: 39px;
@@ -117,6 +131,7 @@ main{
     font-weight: 300;
     color: var(--Grayish_Blue);
     margin: 1.5rem 0;
+    line-height: 1.5;
 }
 #section_body button{
     all: unset;
@@ -124,12 +139,13 @@ main{
     border-radius: 3px;
     padding: 8px 20px;
     border-radius: 4px;
+    color: white;
 }
 #section_text{
-    width: 30%;
+    width: 50%;
 }
 article{
-    margin: 2rem 1rem;
+    margin: 6rem 1rem;
 }
 #article_head{
     text-align: center;
@@ -146,7 +162,7 @@ article{
     display: flex;
     justify-content: center;
     gap: 3rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     align-items: center;
 }
 .line{
@@ -157,7 +173,8 @@ article{
 .browsers1, .browsers2, .browsers3{
     border: 2px solid white;
     padding: 1rem;
-    box-shadow: 0 0 8px var(--Grayish_Blue);
+    box-shadow: 0 0 4px var(--Grayish_Blue);
+    border-radius: 6px;
 }
 .browsers1 img, .browsers2 img, .browsers3 img{
     position: relative;
@@ -169,6 +186,10 @@ article{
 }
 .browsers1 p, .browsers2 p, .browsers3 p{
     margin: 1rem 0;
+    font-weight: 500;
+}
+.browsers_text1 h5, .browsers_text2 h5, .browsers_text3 h5{
+    font-weight: 100;
 }
 .browsers_text1 button, .browsers_text2 button, .browsers_text3 button{
     all: unset;
@@ -176,10 +197,10 @@ article{
     padding: 6px 12px;
     cursor: pointer;
     border-radius: 4px;
-    
-}
-.browsers_text1 button, .browsers_text3 button{
+    color: white;
+    font-size: 13px;
     background-color: var(--Soft_Blue);
+    
 }
 .browsers2{
     margin-top: 2rem;
@@ -202,6 +223,62 @@ article{
 .FAQ h5{
     font-weight: 400;
     margin: 2rem 0;
+    line-height: 1.5;
+}
+.questions{
+    display: flex;
+    position: relative;
+    left: 87%;
+    transform: translateX(-50%);
+    align-items: center;
+    margin: 14px 0;
+    gap: 7rem;
+}
+.menu-icons i{
+    position: relative;
+    left: 90%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    display: none;
+}
+.menu-icons i:nth-of-type(2){
+    display: none;
+}
+.ri-arrow-drop-down-line{
+    font-size: 45px;
+    font-weight: 200;
+}
+.ri-close-line{
+    font-size: 30px;
+    font-weight: 200;
+}
+.paragraph{
+    width: 30%;;
+    position: relative;
+    left: 52%;
+    transform: translateX(-50%);
+    font-size: 13px;
+    margin-bottom: 1rem;
+    display: none;
+}
+.line2{
+    border: 2px solid var(--Grayish_Blue);
+    position: relative;
+    left: 52%;
+    width: 30%;
+    transform: translateX(-50%);
+}
+#FAQ_button{
+    border: 2px solid var(--Soft_Blue);
+    background-color: var(--Soft_Blue);
+    border-radius: 3px;
+    padding: 8px 20px;
+    border-radius: 4px;
+    color: white;
+    margin: 2rem 0 4rem 0;
+    position: relative;
+    left: 51%;
+    transform: translateX(-50%);
 }
 .emailUs{
     display: flex;
@@ -214,23 +291,31 @@ article{
     color: white;
 }
 .lower_section h3{
-    margin: 2rem 0;
+    margin: 1rem 0 2rem 0;
+    width: 35%;
+    position: relative;
+    transform: translateX(-50%);
+    left: 51%;
+    font-size: 24px;
+    line-height: 1.4;
 }
 #email{
     position: relative;
     transform: translateX(-50%);
-    left: 45%;
-    padding: 8px;
+    left: 48%;
+    padding: 8px 20px;
 }
 .emailUs button{
     position: relative;
     transform: translateX(-50%);
-    left: 43%;
-    padding: 8px;
+    left: 45%;
+    padding: 9px 15px;
     border: 2px solid var(--Soft_Red);
-    color: var(--Soft_Red);
+    background-color: var(--Soft_Red);
+    color: white;
     font-size: 12px;
     cursor: pointer;
+    border-radius: 4px;
 }
 footer{
     background-color: var(--Very_Dark_Blue);
@@ -253,9 +338,429 @@ footer{
 .footer_left a:hover{
     color: var(--Soft_Red);
 }
+footer ul{
+    text-decoration: none;
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
 .socials a:hover{
     background-color: var(--Soft_Red);
 }
 .socials a{
     margin: 13px;
+}
+@media screen and (max-width: 992px) {
+    main{
+        margin: 3rem;
+        gap: 2rem;
+    }
+    .main_text p{
+        font-size: 33px;
+    }
+    .main_text h5{
+        font-size: 15px;
+    }
+    main img{
+        width: 60%;
+    }
+    .navList{
+        gap: 2rem;
+    }
+    nav ul{
+        gap: 2rem;
+    }
+    nav{
+        margin: 1rem 3rem;
+    }
+    #chrome_button{
+        font-size: 13px;
+        padding: 7px 8px;
+    }
+    #firefox_button{
+        padding: 7px 8px;
+    }
+    #section_head{
+        width: 45%;
+    }
+    #bookmark_features{
+        width: 55%;
+        gap: 2rem;
+        left: 53%;
+    }
+    #section_body{
+        gap: 4rem;
+        margin: 4rem 3rem;
+    }
+    #section_body img{
+        width: 60%;
+    }
+    #section_body p{
+        font-size: 35px;
+    }
+    #section_text{
+        width: 40%;
+    }
+    #article_head{
+        width: 50%;
+    }
+    .FAQ{
+        width: 50%;
+    }
+    .questions{
+        left: 82%;
+    }
+    .line2{
+        left: 52%;
+        width: 40%;
+    }
+    .lower_section h3{
+        width: 35%;
+    }
+    .emailUs button{
+        left: 40%;
+    }
+    #email{
+        left: 45%;
+    }
+    footer{
+        padding: 2rem 3rem;
+    }
+    .footer_left{
+        gap: 1rem;
+    }
+    .socials a{
+        margin: 10px;
+    }
+}
+@media screen and (max-width: 768px) {
+    nav{
+        margin: 1rem 2rem;
+    }
+    .navList{
+        gap: 1rem;
+    }
+    nav button{
+        padding: 7px 12px;
+    }
+    nav ul{
+        gap: 1rem;
+        font-size: 14px;
+    }
+    main{
+        margin: 3rem 2rem;
+        gap: 1rem;
+    }
+    .main_text{
+        width: 60%;
+    }
+    .main_text p{
+        font-size: 28px;
+    }
+    main img{
+        width: 50%;
+    }
+    #chrome_button{
+        font-size: 13px;
+        padding: 9px;
+    }
+    #firefox_button{
+        padding: 9px;
+        font-size: 13px;
+        margin-left: 7px;
+    }
+    #section_head{
+        width: 60%;
+    }
+    #bookmark_features{
+        width: 70%;
+        gap: 1.5rem;
+    }
+    #section_body{
+        margin: 4rem 2rem;
+        gap: 2rem;
+    }
+    #section_body p{
+        font-size: 30px;
+    }
+    #section_body h5{
+        font-size: 15px;
+        margin: 1rem 0;
+    }
+    #section_body button{
+        padding: 7px 15px;
+        font-size: 14px;
+    }
+    #article_head{
+        width: 65%;
+    }
+    #article_body{
+        gap: 1.5rem;
+    }
+    .browsers_text3 button, .browsers_text2 button, .browsers_text3 button{
+        padding: 5px;
+    }
+    .browsers1 img, .browsers2 img, .browsers3 img{
+        width: 55%;
+    }
+    .browsers1, .browsers2, .browsers3{
+        padding: 10px;
+    } 
+    .FAQ{
+        width: 65%;
+    }
+    .questions{
+        left: 78%;
+    }
+    .line2{
+        left: 50%;
+        width: 45%;
+    }
+    .lower_section h3{
+        width: 45%;
+        font-size: 22px;
+    }
+    .emailUs button{
+        left: 37%;
+    }
+    footer{
+        padding: 1.5rem;
+    }
+    .socials a{
+        margin: 7px;
+    }
+    .footer_left{
+        gap: 10px;
+    }
+    footer ul{
+        gap: 1rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    nav button{
+        display: none;
+    }
+    #nav-menu-icons{
+        display: block;
+        font-size: 25px;
+    }
+    .ri-close-fill{
+        display: none;
+    }
+    .navList ul{
+        flex-direction: column;
+        position: fixed;
+        left: 50%;
+        top: -35%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        border: 2px solid var(--Very_Dark_Blue);
+        box-shadow: 0 0 5px var(--Very_Dark_Blue);
+        padding: 2rem;
+        width: 55%;
+        border-radius: 5px;
+        background-color: rgba(54, 39, 170, 0.947);
+        transition: .7s;
+    }
+    main{
+        margin: 3rem 1rem;
+    }
+    .main_text{
+        width: 40%;
+    }
+    .main_text h5{
+        font-size: 14px;
+    }
+    main img{
+        width: 60%
+    }
+    #firefox_button{
+        margin-top: 1rem;
+        margin-left: 0;
+    }
+    #section_head{
+        width: 80%;
+    }
+    #bookmark_features{
+        width: 90%;
+        gap: 1.5rem;
+    }
+    #section_body{
+        margin: 4rem 1rem;
+        gap: 1rem;
+    }
+    #section_body h5, #section_head h5, #article_head h5{
+        font-size: 14px;
+        margin: 14px 0;
+    }
+    #section_body img {
+        width: 55%;
+    }
+    #section_body p {
+        font-size: 22px;
+    }
+    #article_head {
+        width: 85%;
+    }
+    .browsers1 p, .browsers2 p, .browsers3 p {
+        margin: 11px 0;
+        font-size: 13px;
+    }
+    .browsers1 h5, .browsers2 h5, .browsers3 h5 {
+        font-size: 12px;
+    }
+    .browsers_text1 button, .browsers_text2 button, .browsers_text3 button{
+        font-size: 12px;
+        padding: 0;
+    }
+    .FAQ{
+        width: 80%;
+    }
+    .questions{
+        left: 72%;
+    }
+    .line2{
+        width: 58%;
+    }
+    footer{
+        padding: 1rem;
+    }
+    .footer_left img{
+        width: 35%;
+    }
+    footer ul{
+        gap: 10px;
+    }
+    .socials a{
+        margin: 5px;
+    }
+    .footer_left a{
+        font-size: 10px;
+    }
+}
+@media screen and (max-width: 480px) {
+    main{
+        flex-direction: column-reverse;
+    }
+    main img{
+        width: 100%;
+    }
+    .main_text{
+        width: 100%;
+        text-align: center;
+    }
+    #chrome_button{
+        font-size: 15px;
+        padding: 9px 15px;
+    }
+    #firefox_button{
+        padding: 9px 15px;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    .main_text h5 {
+        font-size: 16px;
+    }
+    section{
+        margin: 0 1rem;
+    }
+    #section_head {
+        width: 100%;
+    }
+    #section_body h5, #section_head h5, #article_head h5 {
+        font-size: 16px;
+        margin: 1rem 0;
+    }
+    #bookmark_features {
+       flex-direction: column;
+       text-align: center;
+    }
+    #section_body{
+        flex-direction: column;
+    }
+    #section_body img {
+        width: 100%;
+    }
+    #section_text {
+        width: 100%;
+        text-align: center;
+    }
+    #article_head {
+        width: 100%;
+    }
+    #article_body{
+        flex-direction: column;
+    }
+    .browsers1, .browsers2, .browsers3{
+        width: 65%;
+    }
+    .browsers1, .browsers2, .browsers3 {
+        margin-top: 0;
+        padding-top: 2rem;
+    }
+    .browsers1 p, .browsers2 p, .browsers3 p{
+        font-size: 17px;
+    }
+    #section_body h5, #section_head h5, #article_head h5{
+        font-size: 17px;
+    }
+    .FAQ{
+        width: 90%;
+    }
+    .FAQ h5{
+        font-size: 15px;
+    }
+    .line2{
+        width: 75%;
+    }
+    .questions{
+        left: 63%;
+    }  
+    .lower_section p{
+        font-size: 20px;
+    } 
+    .lower_section h3{
+        width: 90%;
+    }
+    .emailUs{
+        flex-direction: column;
+    }
+    #email{
+        padding: 11px 96px;
+        margin-left: 2rem;
+    }
+    .emailUs button{
+        padding: 11px 7rem; /*CHECK THIS!!! */
+        margin-top: 10px;
+        font-size: 16px;
+        margin-left: 3rem;
+    }
+    .footer_left{
+        flex-direction: column;
+    }
+    footer ul{
+        flex-direction: column;
+    }
+    footer{
+        flex-direction: column;
+        padding: 3rem 5rem;
+    }
+    .footer_left img{
+        width: 65%;
+    }
+    .footer_left a {
+        font-size: 16px;
+    }
+    footer li{
+        margin-top: 2rem;
+    }
+    .socials{
+        position: relative;
+        left: 73%;
+        transform: translateX(-50%);
+        margin-top: 2.5rem;
+    }
+    .socials a{
+        margin: 22px;
+    }
 }
