@@ -23,6 +23,7 @@ nav{
     display: flex;
     justify-content: space-between;
     margin: 1rem 5rem;
+    gap: 14rem;
     align-items: center;
 }
 .navList{
@@ -49,8 +50,10 @@ nav button{
     all: unset;
     padding: 8px 26px;
     border: 3px solid var(--Soft_Red);
-    color: var(--Soft_Red);
+    background-color: var(--Soft_Red);
+    color: white;
     font-size: 13px;
+    border-radius: 5px;
 }
 main{
     display: flex;
@@ -77,29 +80,31 @@ main img{
 }
 .main_text button{
     all: unset;
-    padding: 8px 10px;
-    font-size: 13px;
-    box-shadow: 0 0 2px var(--Very_Dark_Blue);
+    padding: 5px;
+    /* font-size: 13px; */
+    box-shadow: 0 0 3px var(--Very_Dark_Blue);
     cursor: pointer;
 }
 #chrome_button{
     background-color: var(--Soft_Blue);
     border: 2px solid var(--Soft_Blue);
-    border-radius: 3px;
+    border-radius: 4px;
     color: white;
+    font-size: 13px;
+    padding: 10px;
 }
 #firefox_button{
     margin-left: 1rem;
     color: var(--Very_Dark_Blue);
-    border: 2px solid var(--Very_Dark_Blue);
-    border-radius: 3px;
+    box-shadow: 0 0 10px rgb(218, 217, 217);
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 14px;
 }
 #section_head{
     text-align: center;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
     width: 30%;
+    margin: 0 auto;
 }
 #bookmark_features{
     display: flex;
@@ -110,30 +115,39 @@ main img{
     width: 50%;
     margin: 2rem 0;
 }
-#bookmark_features a{
+#bookmark_features button{
+    all: unset;
+    cursor: pointer;
     color: var(--Very_Dark_Blue);
 }
-#section_body{
+.active_tab{
+    border-bottom: 3px solid var(--Soft_Red) !important;
+    padding-bottom: 2px !important;
+}
+#section_body, #section_body2, #section_body3{
     display: flex;
     align-items: center;
     margin: 4rem 6rem;
     gap: 9rem;
 }
-#section_body img{
+#section_body2, #section_body3{
+    display: none;
+}
+#section_body img, #section_body2 img, #section_body3 img{
     width: 50%;
 }
-#section_body p{
+#section_body p, #section_body2 p, #section_body3 p{
     font-size: 39px;
     font-weight: 500;
 }
-#section_body h5, #section_head h5, #article_head h5{
+#section_body h5, #section_body2 h5, #section_body3 h5, #section_head h5, #article_head h5{
     font-size: 16px;
     font-weight: 300;
     color: var(--Grayish_Blue);
     margin: 1.5rem 0;
     line-height: 1.5;
 }
-#section_body button{
+#section_body button, #section_body2 button, #section_body3 button{
     all: unset;
     background-color: var(--Soft_Blue);
     border-radius: 3px;
@@ -149,9 +163,7 @@ article{
 }
 #article_head{
     text-align: center;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
+    margin: 0 auto;
     width: 30%;
 }
 #article_head p{
@@ -162,7 +174,7 @@ article{
     display: flex;
     justify-content: center;
     gap: 3rem;
-    margin-top: 1rem;
+    margin-top: 3rem;
     align-items: center;
 }
 .line{
@@ -172,8 +184,8 @@ article{
 }
 .browsers1, .browsers2, .browsers3{
     border: 2px solid white;
-    padding: 1rem;
-    box-shadow: 0 0 4px var(--Grayish_Blue);
+    padding: 1rem 2rem;
+    box-shadow: 5px 5px 10px rgb(207, 207, 207);
     border-radius: 6px;
 }
 .browsers1 img, .browsers2 img, .browsers3 img{
@@ -200,6 +212,7 @@ article{
     color: white;
     font-size: 13px;
     background-color: var(--Soft_Blue);
+    box-shadow: 5px 5px 10px rgb(207, 207, 207)
     
 }
 .browsers2{
@@ -209,11 +222,9 @@ article{
     margin-top: 4rem;
 }
 .FAQ{
-    position: relative;
-    transform: translateX(-50%);
-    left: 50%;
     text-align: center;
-    width: 40%;
+    margin: 0 auto;
+    width: 35%;
     color: var(--Very_Dark_Blue);
 }
 .FAQ p{
@@ -227,46 +238,33 @@ article{
 }
 .questions{
     display: flex;
-    position: relative;
-    left: 87%;
-    transform: translateX(-50%);
+    justify-content: space-between;
     align-items: center;
-    margin: 14px 0;
-    gap: 7rem;
-}
-.menu-icons i{
-    position: relative;
-    left: 90%;
-    transform: translateX(-50%);
-    cursor: pointer;
-    display: none;
-}
-.menu-icons i:nth-of-type(2){
-    display: none;
 }
 .ri-arrow-drop-down-line{
     font-size: 45px;
     font-weight: 200;
+    color: var(--Soft_Blue);
 }
-.ri-close-line{
-    font-size: 30px;
-    font-weight: 200;
+.FAQ1{
+    width: 35%;
+    margin: 0 auto;
+    border-top: 1px solid var(--Very_Dark_Blue);
+}
+.FAQ1:nth-of-type(5) {
+    border-bottom: 1px solid var(--Very_Dark_Blue);
 }
 .paragraph{
-    width: 30%;;
-    position: relative;
-    left: 52%;
-    transform: translateX(-50%);
     font-size: 13px;
-    margin-bottom: 1rem;
+    margin-bottom: 12px;
     display: none;
 }
-.line2{
-    border: 2px solid var(--Grayish_Blue);
-    position: relative;
-    left: 52%;
-    width: 30%;
-    transform: translateX(-50%);
+.FAQ1.show .paragraph{ /*Helps to display the paragraph as block once any part of that section is clicked(code is functional in JS line 60*/
+    display: block;
+}
+.FAQ1.imageRotate i{ /*Helps to display the icon in reverse once any part of that section is clicked(code is functional in JS line 60*/
+    transform: rotateZ(-180deg);
+    transition: .5s;
 }
 #FAQ_button{
     border: 2px solid var(--Soft_Blue);
@@ -280,42 +278,38 @@ article{
     left: 51%;
     transform: translateX(-50%);
 }
-.emailUs{
-    display: flex;
-    align-items: center;
-}
 .lower_section{
     background-color: var(--Soft_Blue);
-    padding: 2rem 1rem;
+    padding: 2rem 0;
     text-align: center;
     color: white;
 }
 .lower_section h3{
-    margin: 1rem 0 2rem 0;
     width: 35%;
-    position: relative;
-    transform: translateX(-50%);
-    left: 51%;
+    margin: 1.5rem auto;
     font-size: 24px;
     line-height: 1.4;
 }
+.emailUs{
+    display: flex;
+    align-items: center;
+    width: 22%;
+    margin: 0 auto;
+}
 #email{
-    position: relative;
-    transform: translateX(-50%);
-    left: 48%;
     padding: 8px 20px;
+    border: 2px solid white;
+    border-radius: 5px;
 }
 .emailUs button{
-    position: relative;
-    transform: translateX(-50%);
-    left: 45%;
-    padding: 9px 15px;
+    padding: 9px 17px;
     border: 2px solid var(--Soft_Red);
     background-color: var(--Soft_Red);
     color: white;
     font-size: 12px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 5px;
+    margin: 0 5px;
 }
 footer{
     background-color: var(--Very_Dark_Blue);
@@ -349,6 +343,16 @@ footer ul{
 }
 .socials a{
     margin: 13px;
+}
+@media screen and (max-width: 1419px) {
+    .emailUs{
+        width: 26%;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .emailUs{
+        width: 30%;
+    }
 }
 @media screen and (max-width: 992px) {
     main{
@@ -388,14 +392,14 @@ footer ul{
         gap: 2rem;
         left: 53%;
     }
-    #section_body{
+    #section_body, #section_body2, #section_body3{
         gap: 4rem;
         margin: 4rem 3rem;
     }
-    #section_body img{
+    #section_body img, #section_body2 img, #section_body3 img{
         width: 60%;
     }
-    #section_body p{
+    #section_body p, #section_body2 p, #section_body3 p{
         font-size: 35px;
     }
     #section_text{
@@ -404,24 +408,15 @@ footer ul{
     #article_head{
         width: 50%;
     }
-    .FAQ{
+    .FAQ, .FAQ1{
         width: 50%;
     }
-    .questions{
-        left: 82%;
-    }
-    .line2{
-        left: 52%;
-        width: 40%;
-    }
     .lower_section h3{
-        width: 35%;
+        width: 43%;
     }
-    .emailUs button{
-        left: 40%;
-    }
-    #email{
-        left: 45%;
+    .emailUs{
+        width: 40%;
+        margin: 0 auto;
     }
     footer{
         padding: 2rem 3rem;
@@ -476,18 +471,18 @@ footer ul{
         width: 70%;
         gap: 1.5rem;
     }
-    #section_body{
+    #section_body, #section_body2, #section_body3{
         margin: 4rem 2rem;
         gap: 2rem;
     }
-    #section_body p{
+    #section_body p, #section_body2 p, #section_body3 p{
         font-size: 30px;
     }
-    #section_body h5{
+    #section_body h5, #section_body2 h5, #section_body3 h5{
         font-size: 15px;
         margin: 1rem 0;
     }
-    #section_body button{
+    #section_body button, #section_body2 button, #section_body3 button{
         padding: 7px 15px;
         font-size: 14px;
     }
@@ -506,22 +501,15 @@ footer ul{
     .browsers1, .browsers2, .browsers3{
         padding: 10px;
     } 
-    .FAQ{
+    .FAQ, .FAQ1{
         width: 65%;
     }
-    .questions{
-        left: 78%;
-    }
-    .line2{
-        left: 50%;
-        width: 45%;
-    }
     .lower_section h3{
-        width: 45%;
+        width: 50%;
         font-size: 22px;
     }
-    .emailUs button{
-        left: 37%;
+    .emailUs{
+        width: 51%;
     }
     footer{
         padding: 1.5rem;
@@ -589,14 +577,14 @@ footer ul{
         margin: 4rem 1rem;
         gap: 1rem;
     }
-    #section_body h5, #section_head h5, #article_head h5{
+    #section_body h5,#section_body2 h5, #section_body3 h5, #section_head h5, #article_head h5{
         font-size: 14px;
         margin: 14px 0;
     }
-    #section_body img {
+    #section_body img, #section_body2 img, #section_body3 img {
         width: 55%;
     }
-    #section_body p {
+    #section_body p, #section_body2 p, #section_body3 p {
         font-size: 22px;
     }
     #article_head {
@@ -616,11 +604,11 @@ footer ul{
     .FAQ{
         width: 80%;
     }
-    .questions{
-        left: 72%;
+    .FAQ1{
+        width: 75%;
     }
-    .line2{
-        width: 58%;
+    .emailUs{
+        width: 65%;
     }
     footer{
         padding: 1rem;
@@ -667,18 +655,18 @@ footer ul{
     #section_head {
         width: 100%;
     }
-    #section_body h5, #section_head h5, #article_head h5 {
-        font-size: 16px;
+    #section_body h5, #section_body2 h5, #section_body3 h5, #section_head h5, #article_head h5 {
+        font-size: 17px;
         margin: 1rem 0;
     }
     #bookmark_features {
        flex-direction: column;
        text-align: center;
     }
-    #section_body{
+    #section_body, #section_body2, #section_body3{
         flex-direction: column;
     }
-    #section_body img {
+    #section_body img, #section_body2 img, #section_body3 img{
         width: 100%;
     }
     #section_text {
@@ -708,18 +696,18 @@ footer ul{
         font-size: 13px;
         padding: 9px;
     }
+    .active_tab{
+        width: 20%;
+    }
     .FAQ{
         width: 90%;
     }
     .FAQ h5{
         font-size: 15px;
     }
-    .line2{
-        width: 75%;
+    .FAQ1{
+        width: 85%;
     }
-    .questions{
-        left: 63%;
-    }  
     .lower_section p{
         font-size: 20px;
     } 
@@ -730,14 +718,14 @@ footer ul{
         flex-direction: column;
     }
     #email{
-        padding: 11px 96px;
-        margin-left: 2rem;
+        width: 100%;
+        padding: 1rem 14px;
     }
     .emailUs button{
-        padding: 11px 7rem; /*CHECK THIS!!! */
         margin-top: 10px;
         font-size: 16px;
-        margin-left: 3rem;
+        width: 100%;
+        padding: 1rem 0;
     }
     .footer_left{
         flex-direction: column;
