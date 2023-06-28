@@ -277,13 +277,13 @@ article{
     left: 51%;
     transform: translateX(-50%);
 }
-.lower_section{
+#lower_section{
     background-color: var(--Soft_Blue);
     padding: 2rem 0;
     text-align: center;
     color: white;
 }
-.lower_section h3{
+#lower_section h3{
     width: 35%;
     margin: 1.5rem auto;
     font-size: 24px;
@@ -410,7 +410,7 @@ footer ul{
     .FAQ, .FAQ1{
         width: 50%;
     }
-    .lower_section h3{
+    #lower_section h3{
         width: 43%;
     }
     .emailUs{
@@ -503,7 +503,7 @@ footer ul{
     .FAQ, .FAQ1{
         width: 65%;
     }
-    .lower_section h3{
+    #lower_section h3{
         width: 50%;
         font-size: 22px;
     }
@@ -710,10 +710,10 @@ footer ul{
     .FAQ1{
         width: 85%;
     }
-    .lower_section p{
+    #lower_section p{
         font-size: 20px;
     } 
-    .lower_section h3{
+    #lower_section h3{
         width: 90%;
     }
     .emailUs{
