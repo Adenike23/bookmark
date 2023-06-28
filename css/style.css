@@ -23,7 +23,6 @@ nav{
     display: flex;
     justify-content: space-between;
     margin: 1rem 5rem;
-    gap: 14rem;
     align-items: center;
 }
 .navList{
@@ -525,6 +524,9 @@ footer ul{
     }
 }
 @media screen and (max-width: 576px) {
+    nav{
+        gap: 11rem;
+    }
     nav button{
         display: none;
     }
